@@ -293,7 +293,7 @@ func init() {
 		RingLen:        *rsz,
 		Latency:        time.Duration(*late) * time.Millisecond,
 		MaxProcessTime: time.Duration(*maxpt) * time.Minute,
-		MarkMessage:    false,
+		MarkMessage:    *markmsg,
 		Driver:         []zero.Driver{config.W[0]},
 	}
 
